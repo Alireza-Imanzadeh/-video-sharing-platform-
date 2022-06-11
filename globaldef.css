@@ -1,0 +1,28 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+:root{
+    font-family: 'Montserrat', sans-serif;
+    color: #aaaaaa;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+body{
+    background-color: #f2f2f2;
+}
+main{
+    background-color: #fafafa;
+}
+a{
+    text-decoration: none;
+    color: #aaaaaa;
+}
+li{
+    list-style-type: none;
+}
+p::selection{
+    color: #de635d;
+    background-color:#b3b3b3 ;
+}

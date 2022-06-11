@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="nightMode.js"></script>
+    <link rel="stylesheet" href="globaldef.css">
+    <link rel="stylesheet" href="master.css">
+    <title>Video Sharing Platform UI</title>
+</head>
+<body>
+    <main>
+        <div onclick="_click()" class="nightMode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+            </svg>
+        </div>
+        <header class="headTop">
+            <div class="leftHead">
+                <i class="material-icons">
+                    menu
+                </i>
+                <div class="circleRed"></div>
+                <label for="search">
+                    <i class="material-icons">
+                        search
+                    </i>
+                </label>
+                <input id="search" type="text" placeholder="Search...">
+            </div>
+            <ul class="menuH">
+                <li>
+                    <a id="home" href="">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Categories
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Subscriptions
+                    </a>
+                </li>
+            </ul>
+            <div class="rightHead">
+                <div class="uploadB">
+                    <a href="">
+                        <i class="material-icons">
+                            cloud_download
+                        </i>
+                        upload
+                    </a>
+                </div>
+                <i class="fa fa-bell"></i>
+                <div class="introImag"></div>
+                <i class="fa fa-angle-down"></i>
+            </div>
+        </header>
+        <nav class="nav">
+            <div class="navTop">
+                <ul class="menuV">
+                    <li>
+                        <a href="">
+                            <i class="material-icons">home</i>
+                            home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="material-icons">person</i>
+                            my channel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-star"></i>
+                            popular videos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="material-icons">subscriptions</i>
+                            Subscriptions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="material-icons">history</i>
+                            history views
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-clock-o"></i>
+                            watch later
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-thumbs-up"></i>
+                            like videos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="material-icons">playlist_play</i>
+                            playlists
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+            <div class="navMiddle">
+                <h3>Subscriptions</h3>
+                <ul class="listName">
+                    <li>
+                        <div class="imgNav one"></div>
+                        Lara Floyid
+                    </li>
+                    <li>
+                        <div class="imgNav two"></div>
+                        Francis Wolfe
+                    </li>
+                    <li>
+                        <div class="imgNav three"></div>
+                        Inez Gibson
+                    </li>
+                    <li>
+                        <div class="imgNav four"></div>
+                        Anne Norton
+                    </li>
+                    <li>
+                        <div class="imgNav five"></div>
+                        Bessie Casey
+                    </li>
+                    <li>
+                        <div class="imgNav six"></div>
+                        Hanry David
+                    </li>
+                </ul>
+                <div class="showBone">
+                    <a href="">
+                        show more
+                    </a>
+                </div>
+            </div>
+            <div class="navBottom">
+                <h3>Popular Channels</h3>
+                <ul class="menuChannel">
+                    <li>
+                        <a href="">
+                            <i class="material-icons">music_note</i>
+                            music channels
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-cart-plus"></i>
+                            shopping channel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-gamepad"></i>
+                            games channel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="material-icons">fitness_center</i>
+                            fitness channel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="material-icons">euro_symbol</i>
+                            economy channels
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-motorcycle"></i>
+                            motorcycle channels
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-cc-visa"></i>
+                            visa channels
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="">
+                            <i class="fa fa-cogs"></i>
+                            setting
+                        </a>
+                    </li>
+                </ul>
+                <div class="showBtwo">
+                    <a href="">show more</a>
+                </div>
+
+            </div>
+        </nav>
+        <section>
+            <div class="boxImg">
+                <figure>
+                    <div class="icons3rd">
+                        <div class="circle">
+                            <a href="">
+                                <i class="material-icons">mail</i>
+                            </a>
+                        </div>
+                        <div class="circle">
+                            <a href="">
+                                <i class="material-icons">share</i>
+                            </a>
+                        </div>
+                        <div class="circle">
+                            <a href="">
+                                <i class="material-icons">more_horiz</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hightLight">
+                        <i class="material-icons">people</i>
+                        <span>1,702</span>
+                        <i class="material-icons">remove_red_eye</i>
+                        <span>1,503</span>
+                        <i class="material-icons">flag</i>
+                        <span>sep21</span>
+                        <i class="fa fa-youtube-play"></i>
+                        <span>234</span>
+                    </div>
+                </figure>
+                <div class="footerImg">
+                    <div class="intro"></div>
+                    <span>Phoebe Allison</span>    
+                    <ul class="menu">
+                        <li><a href="">main</a></li>
+                        <li><a id="videos" href="">videos</a></li>
+                        <li><a href="">playlists</a></li>
+                        <li><a href="">about</a></li>
+                    </ul>
+                    <div class="followB">
+                        <a href="">follow</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middlePart">
+                <div class="MPRight">
+                    <i class="material-icons">subscriptions</i>
+                    <span>See what's trending</span>
+                </div>
+                <div class="MPMiddle">
+                    <a href="">date added</a>
+                    <a href="">most popular</a>
+                </div>
+                <div class="playB">
+                    <a href="">
+                        <i class="material-icons">play_arrow</i>
+                        play all
+                    </a>
+                </div>
+            </div>
+            <div class="gallery">
+               <div>
+                    <video autoplay muted loop src="vid/1.mp4"></video>
+                    <figcaption>planning helps make <br>15.4k views
+                        <div class="timeVid">
+                            <span>12.51</span>
+                        </div>
+                    </figcaption>
+               </div>
+                <div>
+                    <video autoplay muted loop src="vid/2.mp4"></video>
+                    <figcaption>this is cloaud break<br> 13.2k views
+                        <div class="timeVid">
+                            <span>13.50</span>
+                        </div>
+                    </figcaption>
+               </div>
+                <div>
+                    <video autoplay muted loop src="vid/3.mp4"></video>
+                    <figcaption>lost your mind<br> 11.7k views
+                        <div class="timeVid">
+                            <span>09.11</span>
+                        </div>
+                    </figcaption>
+               </div>
+                <div>
+                    <video autoplay muted loop src="vid/4.mp4"></video>
+                    <figcaption>planning helps make <br> 9.2k views
+                        <div class="timeVid">
+                            <span>17.01</span>
+                        </div>
+                    </figcaption>
+               </div>
+                <div>
+                    <video autoplay muted loop src="vid/5.mp4"></video>
+                    <figcaption>research in advertising<br> 18.4k views
+                        <div class="timeVid">
+                            <span>03.14</span>
+                        </div>
+                    </figcaption>
+               </div>
+                <div>
+                    <video autoplay muted loop src="vid/6.mp4"></video>
+                    <figcaption>see the unmatched<br>3.4k views
+                        <div class="timeVid">
+                            <span>08.43</span>
+                        </div>
+                    </figcaption>
+               </div>
+                <div>
+                    <video autoplay muted loop src="vid/7.mp4"></video>
+                    <figcaption>dance in the air<br>17.4k views
+                        <div class="timeVid">
+                            <span>18.51</span>
+                        </div> 
+                    </figcaption>
+               </div>
+                <div>
+                    <video autoplay muted loop src="vid/8.mp4"></video>
+                    <figcaption>sadness will last forever<br> 23.7k views
+                        <div class="timeVid">
+                            <span>11.25</span>
+                        </div>
+                    </figcaption>
+               </div>
+            </div>
+            <div class="loadMore">
+                <i class="fa fa-rotate-right"></i>
+                <span>load more</span>   
+            </div>
+            <div class="footerFirst">
+                <div>
+                    <i class="material-icons">location_on</i>
+                    <h3>Find us</h3>
+                    <span>iran ,tehran , kiyanshahr</span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <h3>call us</h3>
+                    <span>+989195260806</span>
+                </div>
+                <div>
+                    <i class="material-icons">email</i>
+                    <h3>mail us</h3>
+                    <span>confirmationcode29@gmail.com</span>
+                </div>
+            </div> 
+            <div class="footerSecond">
+                <div class="footerSleft">
+                    <figure></figure>
+                    <p>
+                        we are having the best time of our lives in the front end programming course at Parnian Institute and we are very happy about that
+                    </p>
+                </div>
+                <div class="footerSmiddle">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="">portfolio</a></li>
+                        <li><a href="">expert teams</a></li>
+                        <li><a href="">latest news</a></li>
+                        <li><a href="">services</a></li>
+
+                    </ul>
+                </div>
+                <div class="footerSright">
+                    <h3>Subscribe</h3>
+                    <p>Dont miss to subscribe to our new feeds, kindly fill the form below.</p>
+                    <div>
+                        <input id="email" type="text" placeholder="Email Address">
+                        <label for="email"><i class="fa fa-send"></i></label>
+                    </div>
+                </div>
+            </div>
+            <div class="footerFinal">
+                <div>
+                    <p>Copyright © 2022, All Right Reserved.</p>
+                </div>
+                <div>
+                    <h2>follow me</h2>
+                    <div class="iconsLink">
+                        <a href="https://github.com/Alireza-Imanzadeh"><i class="fa fa-git-square"></i></a>
+                        <a href="https://www.instagram.com/alirezaa_imanzadeh/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/alireza-imanzadeh"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <p>Terms of Use Policy</p>
+                </div>
+            </div> 
+        </section>  
+    </main>
+</body>
+</html>
